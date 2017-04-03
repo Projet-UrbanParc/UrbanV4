@@ -1,0 +1,22 @@
+body {
+    background-color: #E7D8C8;
+    font-family: 'Frijole', cursive;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15em;
+    margin: auto;
+    
+}
+
+h2 {
+    font-family: 'Frijole', cursive;
+}
+
+button {
+    margin-top: 1em;
+}

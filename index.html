@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Urban Parc</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- LINK ICON FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- LINK SCRIPT -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- Modal Page Bistrot-->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h1 class="modal-title" id="myModalLabel">BISTROT</h1>
+        </div>
+        <div class="modal-body">
+          <!-- SECTION I -->
+          <section id="section-bist1">
+            <!-- ARTICLE IMAGE -->
+            <article>
+              <img src="images/bgbistro.jpg" alt="Image Test">
+            </article>
+            <!-- ARTICLE TEXTE -->
+            <article>
+              <h2>BISTROT</h2>
+              <p>- Sur place ou à emporter<br/> - Espace de restauration chauffé<br/> - Terrasse / Parking privé / Wifi gratuit<br/> - Possibilité réservation groupe<br/> - Tickets restaurant acceptés<br/> Ouvert tous les midis sauf le dimanche.
+              </p>
+            </article>
+          </section>
+          <!-- FIN SECTION I -->
+          <hr class="hr">
+          <!-- SECTION II -->
+          <section id="section-bist2">
+            <!-- ARTICLE IMAGE -->
+            <article style="width:80%;">
+              <img src="images/bgbodybistro.jpg" alt="Image Test">
+            </article>
+            <!-- ARTICLE TEXTE -->
+            <article>
+              <h2>INFOS</h2>
+              <p>Un approvisionnement LOCAL, une offre ECO-responsable, une lutte contre le gaspillage alimentaire.</p>
+              <p>Des recettes faites "comme à la maison", une ambiance conviviale, chaleureuse, COOL.</p>
+            </article>
+          </section>
+          <!-- FIN SECTION II -->
+          <hr class="hr">
+          <!-- SECTION III -->
+          <section id="section-bist3">
+            <!-- ARTICLE IMAGE -->
+            <article>
+              <img src="images/bistro.jpg" alt="Image Test">
+            </article>
+            <!-- ARTICLE TEXTE -->
+            <article>
+              <h2>MENUS</h2>
+              <p>- Menu Etudiant......5,50€<br/> - Menu Rapide......6,50€<br/> - Assiette du Jour......10,50€<br/>
+                (Croq'Jaffle, burgers,salades, potatoes, soupes, pâtisseries maison; <br/>Assiettes sans gluten, végétarienne ou vegan disponibles)<br/> - Vendredi Soir: formule SKATE-BURGER
+              </p>
+            </article>
+          </section>
+          <!-- FIN SECTION III -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Small Modal formulaire contact Footer: lien/Nous Contacter -->
+  <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog" role="document">
+      <div>
+        <!-- ARTICLE TEXT -->
+        <article>
+          <!-- Contact Form -->
+          <form id="contact_form2" action="#" method="POST" enctype="multipart/form-data">
+            <div class="row">
+              <h2 style="font-family:UrbanJungle;box-shadow:2px 2px 4px #000;background-color:#000;padding:1%;">Formulaire de contact</h2>
+            </div>
+            <div class="row">
+              <label for="name">Votre Nom:</label><br />
+              <input id="name2" class="input" name="name" type="text" value="" size="30" /><br />
+            </div>
+            <div class="row">
+              <label for="email">Votre Email:</label><br />
+              <input id="email2" class="input" name="email" type="text" value="" size="30" /><br />
+            </div>
+            <div class="row">
+              <label for="message">Votre Message:</label><br />
+              <textarea id="message2" class="input" name="message" rows="7" cols="30"></textarea><br />
+            </div>
+            <div class="row">
+              <input id="submit_button2" type="submit" value="Envoyer" />
+            </div>
+          </form>
+        </article>
+      </div>
+    </div>
+  </div>
+  <!-- Nav bootstrap 3 component -->
+  <nav class="navbar navbar-default">
+    <!--Effets Audio Nav-->
+    <audio id="son0" src="audio/sontarifs.ogg"></audio>
+    <audio id="son1" src="audio/sonacceuil.ogg"></audio>
+    <audio id="son2" src="audio/branchage.ogg"></audio>
+    <audio id="son3" src="audio/sonskate.ogg"></audio>
+    <audio id="son4" src="audio/ambiancecafe.ogg"></audio>
+    <audio id="son5" src="audio/ambevent.ogg"></audio>
+    <audio id="son6" src="audio/sonannif.ogg"></audio>
+    <audio id="son7" src="audio/sontrampo.ogg"></audio>
+    <audio id="son8" src="audio/songroupe.ogg"></audio>
+    <div class="container-fluid">
+      <!-- Menu Mobile -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="images/logoup.png" width="40" height="40" alt="logo">
+          <a href="https://www.facebook.com/urbanparc/" target="_blank" class="fc"><i class="fa fa-facebook-official"></i>Urban Parc</a>
+          <a href="https://www.facebook.com/urbanparc/" target="_blank" class="fc"><i class="fa fa-facebook-official"></i>Bistrot</a>
+        </a>
+      </div>
+
+      <!-- Nav max device -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="accueil" id='link1' rel="son1"><a href="#">Accueil <span class="sr-only">(current)</span></a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Activites <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li id='link2' rel="son2"><a href="#" class="accrobranche">Accrobranche</a></li>
+              <li role="separator" class="divider"></li>
+              <li id='link3' rel="son3"><a href="#" class="skatepark">Skatepark</a></li>
+              <li role="separator" class="divider"></li>
+              <li id='link7' rel="son7"><a href="#" class="trampo">Trampoline</a></li>
+              <li role="separator" class="divider"></li>
+            </ul>
+          </li>
+          <li class="tarif" id='link0' rel="son0"><a href="#">Tarifs</a></li>
+          <li class="anniversaire" id='link6' rel="son6"><a href="#">Anniversaire</a></li>
+          <li class="evenement" id='link5' rel="son5"><a href="#">Evenement</a></li>
+          <li class="groupes" id='link8' rel="son8"><a href="#">Groupes</a></li>
+          <li class="media"><a href="media.html">Photos/Videos</a></li>
+          <li id='link4' rel="son4" data-toggle="modal" data-target="#myModal"><a href="#" class="bistrot">Bistrot</a></li>
+        </ul>
+      </div>
+      <h3 class="audio-out">Son <i class="fa fa-arrow-right" aria-hidden="true"></i> <i class="fa fa-bell-slash" id="mute" aria-hidden="true"></i></h3>
+    </nav>
+    <!-- Header -->
+    <header>
+      <article class="header_bouton">
+        <div class="bouton_facebook">
+          <a href="https://www.facebook.com/urbanparc/" target="_blank" class="fc"><i class="fa fa-facebook-official"></i>Urban Parc</a>
+          <a href="https://www.facebook.com/urbanparc/" target="_blank" class="fc"><i class="fa fa-facebook-official"></i>Bistrot</a>
+        </div>
+      </article>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- SECTION I -->
+      <section id="section1" class="section1">
+        <!-- ARTICLE IMAGE -->
+        <aside>
+          <video autoplay controls muted poster="images/imgup/sk8/skatepark1.png">
+            <source src="UPPUB.webm" type="video/webm">
+              <source src="UPPUB.mp4" type="video/mp4">
+              </video>
+            </aside>
+            <!-- ARTICLE TEXTE -->
+            <article>
+              <h2>NOUVEAU</h2>
+              <p>Une ancienne usine transformée en Parc de Loisirs en centre-ville d' Alès (à 5min à pied du Cinéplanet) :</p>
+              <p>Bienvenue à URBAN PARC, un lieu incontournable où se mélangent les Sports de Glisse, l'Accrobranche, le Street-Art et la bonne bouffe !</p>
+              <p>Petits ou grands, en famille ou entre amis, pour bouger, déguster, admirer, apprendre et partager… Venez vite découvrir ce lieu unique en France !</p>
+            </article>
+          </section>
+          <!-- FIN DE SECTION I -->
+          <hr>
+          <!-- SECTION II -->
+          <section id="section2" class="section2">
+            <article>
+              <img src="backEnd/LinksAccueil/img/1.jpg" alt="skatepark">
+            </article>
+            <!-- ARTICLE TEXT -->
+            <article>
+              <h2>1000m2 INDOOR D’ACTIVITES</br>ET DE LOISIRS</h2>
+              <h3>SKATEPARK</h3>
+              <p>Trottinette, rollers, skateboard, bmx… 600m2 de glisse urbaine. Zone spéciale débutants. Location de matériel.</p>
+              <h3>ACCROBRANCHE</h3>
+              <p>2 parcours pour enfants, ados et adultes sur une structure métallique de 200m2 : 35 ateliers en hauteur dont 2 tyroliennes de 20m.</p>
+              <h3>TRAMPOLINE GEANT</h3>
+              <p>30m2 de structure en filet sécurisée à 4m du sol !</p>
+            </article>
+            <!-- ARTICLE IMAGE -->
+            <article>
+              <img src="backEnd/LinksAccueil/img/2.jpeg" alt="trampo">
+              <p><strong>Toutes nos activités sont accessibles à partir de 3 ans et encadrées par des moniteurs diplômés.</strong></p>
+            </article>
+          </section>
+          <!-- FIN DE SECTION II -->
+          <hr>
+          <!-- SECTION III -->
+          <section id="section3" class="section3">
+            <article>
+              <img src="backEnd/LinksAccueil/img/3.jpg" alt="bistrot">
+            </article>
+            <article>
+              <div>
+                <h2>BISTROT - GALERIE</h2>
+              </div>
+              <div>
+                <h3>BISTROT</h3>
+              </div>
+              <p>Restauration sur place ou à emporter. Produits frais, bios et locaux. Cuisine de saison. Salle chauffée. Venez découvrir notre spécialité venue d'Australie : le Jaffle</p>
+              <div>
+                <h3>Galerie Street-Art</h3>
+              </div>
+              <p>Fresques géantes réalisées par des artistes graffeurs de la région, expositions d'artistes locaux, évènements culturels (concerts, théâtre, impro, projections…)</p>
+            </article>
+            <article>
+              <img src="backEnd/LinksAccueil/img/4.jpg" alt="gallerie">
+            </article>
+          </section>
+          <!-- FIN DE SECTION III -->
+          <hr>
+          <!-- SECTION IV -->
+          <section id="section4" class="section4">
+            <!-- ARTICLE TEXT -->
+            <article>
+              <h2>ACTUALITES</h2>
+              <p>Vous les attendiez avec impatience !!! Les dates des stages trot / roller /skate des prochaines vacances.</p>
+              <p>Les inscriptions sont ouvertes!</p>
+            </article>
+            <!-- ARTICLE IMAGE -->
+            <div>
+              <img src="backEnd/LinksAccueil/img/5.jpg" alt="Actu fb">
+            </div>
+          </section>
+          <!-- FIN DE SECTION IV -->
+          <hr>
+        </main>
+
+        <!--PARTENAIRES-->
+        <div class="div_partenaires">
+          <section id="partenaires">
+            <div class="container-fluid text-center">
+              <h2><span>Partenaires</span></h2>
+              <hr>
+              <div class="d-flex justify-content-center row">
+                <div class="col-md-4 col-sm-4 col-xs-8">
+                  <a href="http://www.forestparc.com/" target="_blank"><img src="images/logo_partenaire/ForestParc.png" alt="" width="250"/></a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-8">
+                  <a href="https://www.facebook.com/aleswheelsclub/" target="_blank"><img src="images/logo_partenaire/logo_wheels_club.png" alt="" width="250"/></a>
+                </div>
+                <div class=" col-md-4 col-sm-4 col-xs-8">
+                  <a href="http://www.alescevennes.fr/portal/portal/ac/default" target="_blank"><img src="images/logo_partenaire/ales agglo.png" alt="" width="250"/></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-8">
+                  <a href="http://www.clic-n-roll.com/fr/" target="_blank"><img src="images/logo_partenaire/ClicNRoll.jpg" alt="" width="250"/></a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-8">
+                  <a href="https://alesmyriapolis.fr/" target="_blank"><img src="images/logo_partenaire/myriapolis.png" alt="" width="250"/></a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-8">
+                  <a href="http://www.bambouseraie.com/" target="_blank"><img src="images/logo_partenaire/logo-bambouseraie-cevennes.png" alt="" width="250"/></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- GOOGLE MAP -->
+        <div id="btn_map"><i class="fa fa-map fa-2x" aria-hidden="true" style="background-color:#fff;border-radius:50%;margin:0.5em;padding:0.5%"></i><p>Google Map</p></div>
+        <iframe class="maps" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDept59DU6G3wh0YDLtdkDAqcSW_l-cxJE&q=Urban+Parc,Ales+FR" allowfullscreen></iframe>
+        <!--FOOTER-->
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div>
+                  <h2 class="title">Urban Parc</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">Nous Contacter</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-sm-6">
+                <div class="footer-info-single">
+                  <h2 class="title">Plan du site</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#" id="lien1">Accueil</a></li>
+                    <li><a href="#" id="lien2">Accrobranche</a></li>
+                    <li><a href="#" id="lien3">Skate Parc</a></li>
+                    <li><a href="#" id="lien7">Trampoline</a></li>
+                  </ul>
+                  <ul class="list-unstyled">
+                    <li><a href="#" id="lien0">Tarifs</a></li>
+                    <li><a href="#" id="lien6">Anniversaire</a></li>
+                    <li><a href="#" id="lien5">Evenement</a></li>
+                    <li><a href="#" id="lien8">Groupes</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-sm-6">
+                <div>
+                  <h2 class="title">Localisation</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="rue_footer"><i class="fa fa-map-marker" aria-hidden="true"></i> 17 Rue
+                      Marcel Paul, 30100 Alès</a></li>
+                      <li><a class="num_footer"><i class="fa fa-phone-square" aria-hidden="true"></i> 04 66 43 35 76
+                      </a></li>
+                      <li>
+                        <p class="email_footer"><i class="fa fa-envelope" aria-hidden="true"></i> urbanparc.ales@gmail.com
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                  <div>
+                    <h2 class="title">Nous suivre</h2>
+                    <a href="https://www.facebook.com/urbanparc/" target="_blank" class="fc"><i
+                      class="fa fa-facebook-official" style="font-size:35px"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="copyright">
+                <p>Copyright &copy; 2017 Urban Parc.</p>
+              </div>
+            </footer>
+            <!-- END FOOTER -->
+            <!-- SCRIPT JS -->
+            <script type="text/javascript" src="js/custom.js"></script>
+          </body>
+          </html>
