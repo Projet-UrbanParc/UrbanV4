@@ -239,9 +239,13 @@ audio {
 .nav li .bistrot {
   background-image: url("../images/blackboard.jpg");
   font-family: "ToxTypewriter";
-  font-size: 1.750em;
+  font-size: 1.525em;
   font-weight: bold;
   color: #fff !important;
+}
+
+#section-bist3 article p {
+  font-size: 1.5em;
 }
 
 .fa-bell-slash{
@@ -601,7 +605,7 @@ footer a {
     display: flex;
     width: 100%;
     height: 30em;
-    background-image: url("../images/headers/header_accueil.png");
+    background-image: url("../backEnd/LinksAccueil/img/header.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 3px solid #FB7826;

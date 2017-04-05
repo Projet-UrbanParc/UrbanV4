@@ -30,7 +30,7 @@ $(document).ready(function(){
     $('#section4').load("backEnd/LinksAccueil/Section4.html #section4");
     // Animation CSS
     $('header').css({
-      'background-image': 'url(images/headers/header_accueil.png)',
+      'background-image': 'url(backEnd/LinksAccueil/img/header.png)',
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
       'border-bottom': '4px solid #FB7826',
@@ -77,7 +77,7 @@ $(document).ready(function(){
     $('#section4').load("backEnd/LinksAccueil/Section4.html #section4");
     // Animation CSS
     $('header').css({
-      'background-image': 'url(images/headers/header_accueil.png)',
+      'background-image': 'url(backEnd/LinksAccueil/img/header.png)',
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
       'border-bottom': '4px solid #FB7826',
@@ -144,7 +144,7 @@ $(document).ready(function(){
 
     // Animation CSS
     $('header').css({
-      'background-image': 'url("images/headers/header_accro.png")',
+      'background-image': 'url("backEnd/LinksAccrobranche/img/header.png")',
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
       'border-bottom': '4px solid #4BA33C',
@@ -192,7 +192,7 @@ $(document).ready(function(){
 
     // Animation CSS
     $('header').css({
-      'background-image': 'url("images/headers/header_accro.png")',
+      'background-image': 'url("backEnd/LinksAccrobranche/img/header.png")',
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
       'border-bottom': '4px solid #4BA33C',
@@ -259,7 +259,7 @@ $(document).ready(function(){
 
     // Animation CSS
     $('header').css({
-      'background-image': 'url("images/headers/header_skatepark.png")',
+      'background-image': 'url("backEnd/LinksSkatepark/img/header.png")',
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
       'border-bottom': '4px solid #0DB0C3',
@@ -307,7 +307,7 @@ $(document).ready(function(){
 
     // Animation CSS
     $('header').css({
-      'background-image': 'url("images/headers/header_skatepark.png")',
+      'background-image': 'url("backEnd/LinksSkatepark/img/header.png")',
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
       'border-bottom': '4px solid #0DB0C3',
@@ -373,7 +373,7 @@ $(document).ready(function(){
 
     // Animation CSS
     $('header').css({
-      'background-image': 'url("images/headers/header_trampo.png")',
+      'background-image': 'url("backEnd/LinksTrampo/img/header.png")',
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
       'border-bottom': '4px solid #673500',
@@ -421,7 +421,7 @@ $(document).ready(function(){
 
     // Animation CSS
     $('header').css({
-      'background-image': 'url("images/headers/header_trampo.png")',
+      'background-image': 'url("backEnd/LinksTrampo/img/header.png")',
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
       'border-bottom': '4px solid #673500',
@@ -490,7 +490,7 @@ $(document).ready(function(){
 
     // Animation CSS
     $('header').css({
-      'background-image': 'url("images/headers/header_tarif.png")',
+      'background-image': 'url("backEnd/LinksTarifs/img/header.png")',
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
       'border-bottom': '4px solid #D1AC35',
@@ -538,7 +538,7 @@ $(document).ready(function(){
 
     // Animation CSS
     $('header').css({
-      'background-image': 'url("images/headers/header_tarif.png")',
+      'background-image': 'url("backEnd/LinksTarifs/img/header.png")',
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
       'border-bottom': '4px solid #D1AC35',
@@ -604,7 +604,7 @@ $(document).ready(function(){
 
     // Animation CSS
     $('header').css({
-      'background-image': 'url("images/headers/header_anniversaire.png")',
+      'background-image': 'url("backEnd/LinksAnniversaire/img/header.png")',
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
       'border-bottom': '4px solid #DC3FD1',
@@ -652,7 +652,7 @@ $(document).ready(function(){
 
     // Animation CSS
     $('header').css({
-      'background-image': 'url("images/headers/header_anniversaire.png")',
+      'background-image': 'url("backEnd/LinksAnniversaire/img/header.png")',
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
       'border-bottom': '4px solid #DC3FD1',
@@ -718,7 +718,7 @@ $(document).ready(function(){
 
     // Animation CSS
     $('header').css({
-      'background-image': 'url("images/headers/header_event.png")',
+      'background-image': 'url("backEnd/LinksEvenement/img/header.png")',
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
       'border-bottom': '4px solid #FC2A21',
@@ -766,7 +766,7 @@ $(document).ready(function(){
 
     // Animation CSS
     $('header').css({
-      'background-image': 'url("images/headers/header_event.png")',
+      'background-image': 'url("backEnd/LinksEvenement/img/header.png")',
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
       'border-bottom': '4px solid #FC2A21',
@@ -832,7 +832,7 @@ $(document).ready(function(){
 
     // Animation CSS
     $('header').css({
-      'background-image': 'url("images/headers/header_groupes.png")',
+      'background-image': 'url("backEnd/LinksGroupes/img/header.png")',
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
       'border-bottom': '4px solid #0C2448',
@@ -880,7 +880,7 @@ $(document).ready(function(){
 
     // Animation CSS
     $('header').css({
-      'background-image': 'url("images/headers/header_groupes.png")',
+      'background-image': 'url("backEnd/LinksGroupes/img/header.png")',
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
       'border-bottom': '4px solid #0C2448',
